@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <title>Form</title>
+    <meta charset="UTF-8">
+    <title>Form</title>
+
+    <style>
+      body{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      form {
+        width: 400px;
+        height: 300px;
+        border-style: solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient(to top left, #85cab7, #80008080, #f3f33cb5);
+      }
+      .customLabelInputPair{
+        display: flex;
+        padding: 10px;
+      }
+      .customLabel{
+        width: 100px;
+      }
+      .customInput{
+      }
+    </style>
   </head>
   <body>
     <div>
       <form method="post" action="/form">
-        <label>Name</label><input name="name" type="text" value="">
-        <label>Address</label><input name="address" type="text" value="">
+        <div class="customLabelInputPair">
+          <div class="customLabel"><label for="name">Name</label></div>
+          <div class="customInput"><input type="text" name="name" id="name"></div>
+        </div>
 
-        <input type="submit" value="submit">
+        <div class="customLabelInputPair">
+          <div class="customLabel"><label class="custom1" for="email">Email</label></div>
+          <div class="customInput"><input type="email" name="email" id="email"></div>
+        </div>
+
+        <div class="customLabelInputPair">
+          <div class="customLabel"><label class="custom1" for="password">Password</label></div>
+          <div class="customInput"><input type="password" name="password" id="password"></div>
+        </div>
+
+        <div>
+          <input type="submit" value="Submit">
+        </div>
       </form>
     </div>
   </body>
