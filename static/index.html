@@ -6,19 +6,27 @@
 
         <style>
             body{
-                background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.69), rgba(43, 148, 145, 0.65), rgba(192, 151, 61, 0.8));
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+            .customEntranceDiv{
+                width: 600px;
+                height: 400px;
+                border-style: solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-image: linear-gradient(to bottom right, #85cab7, #80008080, #f3f33cb5);
             }
         </style>
 
     </head>
     <body>
-        <div style="display: flex">
+        <div class="customEntranceDiv">
             <h1>Static Website</h1>
-        </div>
-        <div style="display: flex">
             <p>This is a static website. Prepared by Talha Yazar.</p>
-        </div>
-        <div style="display: flex">
             <p>Which I will be using as index page for my first go project.</p>
         </div>
     </body>
