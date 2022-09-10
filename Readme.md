@@ -4,9 +4,9 @@
 In this Project I just recreated the first project of freeCodeCamp.org's video https://youtu.be/jFfo23yIWac.
 <br><br>
 And practice Go language to improve my knowledge about syntax and Web development practises.
-<br>
+<br><br>
 <img alt="Go programming language icon" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg"  width="300">
-<br>
+<br><br>
 Created 2 basic html page and handlers. We have 3 routes: 
 <ol>
   <li>"/" Index Page</li>
